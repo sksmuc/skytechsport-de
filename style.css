@@ -43,7 +43,9 @@ a {
     color: inherit;
     text-decoration: none;  }
 
-a:hover {   color: red; 
+a:hover { color: red; }
+
+header a:hover {   color: red; 
             border-bottom: 1px solid red;
         }
 
@@ -114,3 +116,58 @@ footer nav a {
   .copyright a:hover {
       border: none;
   }
+
+
+
+    /*----------------------- Kontaktformular -----------------------*/
+    form input, form textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+        border: 2px solid grey;
+        padding: 0.5rem;
+        outline: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+      
+      form input:focus, 
+      form textarea:focus {
+        border-color: #c0392b;
+      }
+      
+      textarea {
+        min-height: 9rem;
+      }
+    
+      form label {
+        /*---- change label from default display inline-block to display: block to set custom margin ----*/
+        display: block;
+        margin-top: 1rem;
+          color: #c0392b;
+          font-weight: bold;
+        }
+        
+        form button {
+          background-color: #c0392b;
+          color: white;
+          border: 1px solid #c0392b;
+          padding: 1rem 2rem;
+          margin: 1rem 0;
+          letter-spacing: 0.5rem 0;
+        }
+
+        button:hover {
+            color: #c0392b;
+            background-color: white;
+            border: 1px solid #c0392b;
+          }
+
+          .pointer { cursor: pointer; }
+    
+        form p {
+            font-size: 0.7rem;
+        }
+    
+        form p a {
+          text-decoration: underline;
+        }
