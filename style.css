@@ -29,9 +29,10 @@ img {   max-width: 100%;    }
 /*-----------------------------------------------------------------*/
 
 /*--------- Utility Classes ------------*/
-.padded     {   padding: 5%; }
-.padded-0   {   padding: 0; }
-.padded-1   {   padding: 1rem;}
+.padded     {   padding: 5%;    }
+.padded-0   {   padding: 0;     }
+.padded-1   {   padding: 1rem;  }
+.padded-5   {   padding: 5%;  }
 .left       {   text-align: left;   }
 .center     {   text-align: center; }
 .right      {   text-align: right; }
