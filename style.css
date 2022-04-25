@@ -1,0 +1,63 @@
+/*--------- Temporary Styles ------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, div, img, a, header { border: 1px solid red; }
+/*-----------------------------------------------------------------*/
+
+/*--------- Custom Stylesheet ------------*/
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+img {   max-width: 100%;    }
+
+[class*=grid] {     padding:0;
+                    margin: 0;  }
+[class*=col-] {     padding:0;
+                    margin: 0;  }
+/*-----------------------------------------------------------------*/
+
+/*--------- Utility Classes ------------*/
+.padded     {   padding: 5%; }
+.padded-0   {   padding: 0; }
+.left       {   text-align: left;   }
+.center     {   text-align: center; }
+.right      {   text-align: right; }
+/*-----------------------------------------------------------------*/
+/*--------- Typography ------------*/
+
+a {
+    color: inherit;
+    text-decoration: none;}
+nav a { padding: 0.25rem; }
+a:hover {   color: red; }
+/*-----------------------------------------------------------------*/
+
+/*--------- Header ------------*/
+
+header {    padding: 2% 5%; }
+
+header a {  display: inline-block; 
+            padding: 0.25rem; }
+
+.logo img { max-width: 40%; }
+/* oder anstatt .logo img es ist auch möglich zu schreiben: header img { max-width: 40%; } */
+/*-----------------------------------------------------------------*/
+
+
+
+/*--------- Institute Of Code ------------*/
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+    .hide-sm { display: none; }
+    .center-sm { text-align: center; }
+    .flex-flip-sm { flex-direction: column-reverse; }
+    .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+    /*-----------------------------------------------------------------*/
