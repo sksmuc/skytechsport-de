@@ -1,11 +1,12 @@
-/*--------- Temporary Styles ------------*/
+/*--------- Temporary Styles ------------
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body, div, img, a, header { border: 1px solid red; }
+*/
+a, header, img, h1 { border: 1px solid red; }
+[class*=grid], [class*=col-] { border: 1px solid orange; }
 /*-----------------------------------------------------------------*/
 
 /*--------- Custom Stylesheet ------------*/
@@ -13,6 +14,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: black;
+    padding: 2%;
 }
 img {   max-width: 100%;    }
 
@@ -33,20 +35,27 @@ img {   max-width: 100%;    }
 
 a {
     color: inherit;
-    text-decoration: none;}
-nav a { padding: 0.25rem; }
+    text-decoration: none;  }
+
 a:hover {   color: red; }
+
 /*-----------------------------------------------------------------*/
 
 /*--------- Header ------------*/
 
 header {    padding: 2% 5%; }
 
-header a {  display: inline-block; 
-            padding: 0.25rem; }
+header a {  
+            padding: 0.25rem; 
+            border-box: inline-block;
+        }
 
-.logo img { max-width: 40%; }
-/* oder anstatt .logo img es ist auch möglich zu schreiben: header img { max-width: 40%; } */
+header img {
+    border-box: inline-block; 
+    max-width: 240px;
+    display: flex-end;
+    justify-content: center;
+}
 /*-----------------------------------------------------------------*/
 
 
@@ -57,7 +66,12 @@ header a {  display: inline-block;
     .hide-sm { display: none; }
     .center-sm { text-align: center; }
     .flex-flip-sm { flex-direction: column-reverse; }
-    .bg-plant {
-        background-image: url('/images/plant-light.png');
     }
     /*-----------------------------------------------------------------*/
+
+  .bg-image {
+      background-image: url('/images/bmw-3.jpg');
+      min-height: 60vh;
+      background-color: #021a3c;
+      background-position: center;
+  }
