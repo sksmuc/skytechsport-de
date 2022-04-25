@@ -8,6 +8,7 @@
 a, header, img, h1 { border: 1px solid red; }
 [class*=grid], [class*=col-] { border: 1px solid orange; } 
 */
+div { border: 1px solid orange;}
 /*-----------------------------------------------------------------*/
 
 /*--------- Custom Stylesheet ------------*/
@@ -30,6 +31,7 @@ img {   max-width: 100%;    }
 /*--------- Utility Classes ------------*/
 .padded     {   padding: 5%; }
 .padded-0   {   padding: 0; }
+.padded-1   {   padding: 1rem;}
 .left       {   text-align: left;   }
 .center     {   text-align: center; }
 .right      {   text-align: right; }
@@ -58,11 +60,29 @@ header a {
             border-box: inline-block;
         }
 
+
+
 header img {
     border-box: inline-block; 
     max-width: 240px;
     display: flex-end;
     justify-content: center;
+}
+
+footer img {
+    max-width: 200px;
+}
+
+footer p, h4 {
+    margin: 0.5rem;
+}
+
+footer a:hover {
+    border: none;
+}
+
+footer nav a {
+    display: block;
 }
 /*-----------------------------------------------------------------*/
 
