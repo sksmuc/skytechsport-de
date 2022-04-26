@@ -11,21 +11,25 @@ a, header, img, h1 { border: 1px solid red; }
 
 /*-----------------------------------------------------------------*/
 
-/*--------- Custom Stylesheet ------------*/
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: black;
     padding: 2%;
 }
-img {   max-width: 100%;    }
+img {   
+    max-width: 100%;    
+}
 
-[class*=grid] {     padding: 2%;
-                    margin: 0;
-                }
-[class*=col-] {     padding:0;
-                    margin: 0; 
-                }
+[class*=grid] {     
+    padding: 2%;
+    margin: 0;
+}
+[class*=col-] {     
+    padding:0;
+    margin: 0; 
+}
+
 /*-----------------------------------------------------------------*/
 
 /*--------- Utility Classes ------------*/
@@ -43,16 +47,20 @@ a {
     color: inherit;
     text-decoration: none;  }
 
-a:hover { color: red; }
+a:hover { 
+    color: red; 
+}
 
-header a:hover {   color: red; 
-            border-bottom: 1px solid red;
-        }
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
 
-/*-----------------------------------------------------------------*/
 
-/*--------- Header ------------*/
-
+/*------------------------------------------------------------------------------*/
+/*----------------------------------- Header --------------------------------------*/
 header {
     background-color: white;
 /*padding 2% is in the code of universal GRID on the top*/
@@ -63,7 +71,17 @@ header a {
             border-box: inline-block;
         }
 
+        header a:hover {   
+            border-bottom: 1px solid red;    
+        }
 
+footer a {  
+    margin: 0rem 0.5rem;    
+}
+
+footer a:hover { 
+    border: none;      
+}
 
 header img {
     border-box: inline-block; 
@@ -80,28 +98,42 @@ footer p, h4 {
     margin: 0.5rem;
 }
 
-footer a { margin: 0rem 0.5rem;}
-
-footer a:hover {
-    border: none;
-}
-
 footer nav a {
     display: block;
 }
-/*-----------------------------------------------------------------*/
 
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.copyright a:hover {
+    border: none;
+}
 
-
-/*--------- Institute Of Code ------------*/
+ /*----------------------------------------------------------------*/
+ /*---------------- Institute Of Code -----------------------------*/
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
     .hide-sm { display: none; }
     .center-sm { text-align: center; }
     .flex-flip-sm { flex-direction: column-reverse; }
     }
-    /*-----------------------------------------------------------------*/
+     /*---------------- Gridlex and media-queries -----------------------
+@media (max-width: 36em) 	Max 576px 	_xs-*
+@media (max-width: 48em) 	Max 768px 	_sm-*
+@media (max-width: 64em) 	Max 1024px 	_md-*
+@media (max-width: 80em) 	Max 1280px 	_lg-*
 
+Columns can be hidden at breakpoints:
+<div class="col-12 lg-hidden"></div>
+<div class="col-12 md-hidden"></div>
+<div class="col-12 sm-hidden"></div>
+<div class="col-12 xs-hidden"></div>
+     ------*/
+
+
+/*-----------------------------------------------------------------*/
+ /*--------------------- Background Images and Colours ---------------------------*/
   .bg-image {
       background-image: url('/images/bmw-3.jpg');
       min-height: 60vh;
@@ -109,17 +141,12 @@ footer nav a {
       background-position: center;
   }
 
-  .copyright {
-      font-size: 0.8rem;
-      opacity: 0.5;
-  }
-  .copyright a:hover {
-      border: none;
+  .plum-bg {
+      background-color: plum;
   }
 
-
-
-    /*----------------------- Kontaktformular -----------------------*/
+ /*----------------------------------------------------------------*/
+/*----------------------- Kontaktformular -----------------------*/
     form input, form textarea {
         width: 100%;
         margin: 0.5rem 0;
@@ -171,3 +198,5 @@ footer nav a {
         form p a {
           text-decoration: underline;
         }
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
