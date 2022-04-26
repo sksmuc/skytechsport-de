@@ -9,25 +9,40 @@ a, header, img, h1 { border: 1px solid red; }
 [class*=grid], [class*=col-] { border: 1px solid orange; } 
 */
 
+
 /*-----------------------------------------------------------------*/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: black;
-    padding: 2%;
 }
 img {   
     max-width: 100%;    
 }
 
-[class*=grid] {     
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+[class*=grid] {  background-color: white; }
+[class*=col-] {  background-color: white; }
+body          {     background-color:grey; }
+.plum-bg      {     background-color: plum; }
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+[class*=col-] {     
+    padding:0%;
+    margin: 0; 
+}
+
+
+.class-grid {
     padding: 2%;
     margin: 0;
-}
-[class*=col-] {     
-    padding:0;
-    margin: 0; 
 }
 
 /*-----------------------------------------------------------------*/
@@ -36,11 +51,35 @@ img {
 .padded     {   padding: 5%;    }
 .padded-0   {   padding: 0;     }
 .padded-1   {   padding: 1rem;  }
+.padded-2   {   padding: 2%;    }
 .padded-5   {   padding: 5%;  }
+.margin-2   {   margin: 2%;    }
 .left       {   text-align: left;   }
 .center     {   text-align: center; }
 .right      {   text-align: right; }
 /*-----------------------------------------------------------------*/
+
+/* Utility Classes 
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 5%;    }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+
+.padded-t  { padding-top: 5%;    }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%;   }
+.padded-r  { padding-right: 5%;  }
+
+.padded-0 { padding: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-t-0 { padding-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+*/
 /*--------- Typography ------------*/
 
 a {
@@ -141,10 +180,6 @@ Columns can be hidden at breakpoints:
       background-position: center;
   }
 
-  .plum-bg {
-      background-color: plum;
-  }
-
  /*----------------------------------------------------------------*/
 /*----------------------- Kontaktformular -----------------------*/
     form input, form textarea {
@@ -200,3 +235,11 @@ Columns can be hidden at breakpoints:
         }
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
+
+.headline {
+    color: #c0392b;
+}
+
+.underline {
+    border-bottom:1px solid rot;
+}
