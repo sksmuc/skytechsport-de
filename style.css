@@ -26,7 +26,7 @@ img {
 /*-----------------------------------------------------------------*/
 [class*=grid] {  background-color: white; }
 [class*=col-] {  background-color: white; }
-body          {     background-color:grey; }
+body          {     background-color:purple; }
 .plum-bg      {     background-color: plum; }
 
 
@@ -144,6 +144,7 @@ footer nav a {
 .copyright {
     font-size: 0.8rem;
     opacity: 0.5;
+    color: white;
 }
 .copyright a:hover {
     border: none;
