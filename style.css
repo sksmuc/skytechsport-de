@@ -1,57 +1,52 @@
-/*--------- Temporary Styles ------------
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-a, header, img, h1 { border: 1px solid red; }
-[class*=grid], [class*=col-] { border: 1px solid orange; } 
-*/
 
 
-/*-----------------------------------------------------------------*/
+/*----------------------------------- Universal Styles --------------------------------------*/
+
 * {
     box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
 }
-
-div { border: 2px solid orange; }
-section { border: 1px solid red; }
 
 body {
     background-color: white;
 }
+
 img {   
     max-width: 100%;    
 }
 
-
 [class*=col-] {     
-    padding:0%;
+    padding:0;
     margin: 0; 
 }
-
 
 .class-grid {
     padding: 2%;
     margin: 0;
 }
 
-/*-----------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------ Reusable Styles ---------------------------------------*/
 
-/*--------- Utility Classes ------------*/
-.padded     {   padding: 5%;    }
-.padded-0   {   padding: 0;     }
-.padded-1   {   padding: 1rem;  }
-.padded-2   {   padding: 2%;    }
-.padded-5   {   padding: 5%;  }
-.margin-2   {   margin: 2%;    }
-.left       {   text-align: left;   }
-.center     {   text-align: center; }
-.right      {   text-align: right; }
+.left           {   text-align:     left;   }
+.center         {   text-align:     center; }
+.right          {   text-align:     right;  }
 
-.padded-2-2 {   padding: 2% 0% 2% 2%;}
-/*-----------------------------------------------------------------*/
+.padded         {   padding:        5%;     }
+.padded-0       {   padding:        0;      }
+.padded-1       {   padding:        1rem;   }
+.padded-2       {   padding:        2%;     }
+.padded-5       {   padding:        5%;     }
+.padded-b  { padding-bottom: 5%; }
+
+.padded-footer  {    padding:       5% 5% 2% 5%;  }
+
+.padded-2-2     {   padding:        2% 0% 2% 2%;  }
+.margin-b-2     {   margin-bottom:  2rem;   }
+.margin-2       {   margin:         2%;     }
+
+/*--------------------------------------------------------------------------------------------*/
 
 /* Utility Classes 
 .tall-50 { min-height: 50vh; }
@@ -74,63 +69,53 @@ img {
 .padded-t-0 { padding-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 */
-/*--------- Typography ------------*/
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------------- Typography --------------------------------------*/
+
 
 body {
-    /*----font-family: 'Work Sans', sans-serif; ------*/
     font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Work Sans', sans-serif; */
     font-weight: 300;
     color: #021a3c;
 }
 
-h1 {    font-size: 2.5rem;  }
-h2 {    font-size: 1.8rem; 
-        font-weight: 400;   }
-h3 {    font-size: 1.8rem;  }
-p   {   font-size: 1rem;    
-        line-height: 1.5rem;}
+p  {    font-size:      1.1rem;    
+    line-height:    1.5rem;     
+}
+
+h1 {    font-size:      2.5rem;     
+}
+
+h2 {    font-size:      1.8rem; 
+        font-weight:    400;
+        margin:         2rem;       
+}
+
+h3 {    font-size:      1.8rem;     
+}
 
 h5 {
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height:1.2em;
-    letter-spacing: 0.2rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height:1.2em;
+        letter-spacing: 0.2rem;
 }
 
-.banner-title {
-    font-size: 3.8rem;
-    color: white;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-    line-height: 1.2em;
-}
+.light-text   { color:  white;  }
 
-.flex { display: flex; }
-
-
-span { 
-    display: block;
-    background-color: rgba(126, 14, 14, 0.7);
-    margin-bottom: 0.5rem; 
-    padding: 0rem 1.3rem;
-}
-
-
+/*------------------------------------------------------------------------------*/
+/*----------------------------------- Links & Buttons --------------------------------------*/
 
 a {
     color: inherit;
     text-decoration: none;  
 }
 
-
 a:hover { 
     color: red; 
 }
-
-
-
-.light-text { color: white; }
 
 .button-style {
     color: white;
@@ -189,13 +174,10 @@ footer nav a {
     display: block;
 }
 
-.copyright {
-    font-size: 0.8rem;
-    opacity: 0.5;
-}
-.copyright a:hover {
-    border: none;
-}
+.copyright {            opacity: 0.5;
+                        padding: 0rem 0rem 1.5rem 0rem; }
+.copyright a:hover {    border: none;                   }
+.copyright p {          font-size: 0.9rem;           }
 
 
  /*----------------------------------------------------------------*/
@@ -220,79 +202,73 @@ Columns can be hidden at breakpoints:
      ------*/
 
 
+/*--------------------- Background ---- ---------------------------*/
 /*-----------------------------------------------------------------*/
- /*--------------------- Background Images and Colours ---------------------------*/
-  .bg-image {
-      background-image: url('/images/bmw-3.jpg');
-      min-height: 60vh;
-      background-color: #021a3c;
-      background-position: center;
-      background-size: cover;
-  }
+.bg {
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-  .bg-blue {
-      background-color: #021a3c;
-  }
+.gallery {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 50%;
+    height: 300px;
+    border: 15px solid #021a3c;
+}
 
-  .bg-white {
-      background-color: white;
-  }
+/*-----------------------------------------------------------------*/
+  /*--------------------- Background Colours ---------------------------*/
 
-  .bg-plum {
-      background-color: plum;
-  }
+  .bg-dark {
+    background-color: #021a3c;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.bg-plum {
+    background-color: plum;
+}
+/*-----------------------------------------------------------------*/
+ /*--------------------- Background Images ---------------------------*/
+
+
+  .bg-featured {
+    background-image: url('/images/bmw-3.jpg');
+    background-color: #021a3c;
+}
 
   .bg-shiffrin {
       background-image: url('/images/mikaela-shiffrin.jpg.webp');
-      min-height: 60vh;
       background-color: #021a3c;
-      background-position: center;
-      background-size: cover;
   }
 
   .bg-greenboots {
     background-image: url('/images/bmw-green-boots.jpg.webp');
-    min-height: 60vh;
     background-color: #021a3c;
-    background-position: center;
-    background-size: cover;
 }
 
 .bg-panoramalight {
     background-image: url('/images/panorama-light.jpg.webp');
-    min-height: 60vh;
     background-color: #021a3c;
-    background-position: center;
-    background-size: cover;
 }
 
-.bg-dark {
-    min-height: 60vh;
+.bg-sochi {
+    background-image: url('/images/sochi-abfahrt.jpg.webp');
     background-color: #021a3c;
-    background-position: center;
-    background-size: cover;
 }
 
-.bg-light {
-    min-height: 60vh;
-    background-color: white;
-    background-position: center;
-    background-size: cover;
+.bg-us-event {
+    background-image: url('/images/us-event.jpg.webp');
+    background-color: #021a3c;
 }
 
    /* Section: "Training und Events" -------------------------------------------------------------------- */
-
-   .bg-ski {
-    background-image: url('/images/simulator-ski.jpg');
-    display: inline-block;
-    width: 31%;
-    padding: 5%;
-    margin: 0.4%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    padding-bottom: 25%;
-}
 
 /*----- Background Position Examples 
     .img-1 {background-position: 20% 50%;}
