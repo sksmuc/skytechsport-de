@@ -11,6 +11,12 @@ a, header, img, h1 { border: 1px solid red; }
 
 
 /*-----------------------------------------------------------------*/
+* {
+    box-sizing: border-box; 
+}
+
+div { border: 2px solid orange; }
+section { border: 1px solid red; }
 
 body {
     background-color: white;
@@ -221,6 +227,7 @@ Columns can be hidden at breakpoints:
       min-height: 60vh;
       background-color: #021a3c;
       background-position: center;
+      background-size: cover;
   }
 
   .bg-blue {
@@ -240,8 +247,60 @@ Columns can be hidden at breakpoints:
       min-height: 60vh;
       background-color: #021a3c;
       background-position: center;
+      background-size: cover;
   }
 
+  .bg-greenboots {
+    background-image: url('/images/bmw-green-boots.jpg.webp');
+    min-height: 60vh;
+    background-color: #021a3c;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-panoramalight {
+    background-image: url('/images/panorama-light.jpg.webp');
+    min-height: 60vh;
+    background-color: #021a3c;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-dark {
+    min-height: 60vh;
+    background-color: #021a3c;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-light {
+    min-height: 60vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+   /* Section: "Training und Events" -------------------------------------------------------------------- */
+
+   .bg-ski {
+    background-image: url('/images/simulator-ski.jpg');
+    display: inline-block;
+    width: 31%;
+    padding: 5%;
+    margin: 0.4%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding-bottom: 25%;
+}
+
+/*----- Background Position Examples 
+    .img-1 {background-position: 20% 50%;}
+    .img-2 {background-position: 100% 49%;}
+    .img-3 {background-position: center;}
+    .img-4 {background-position: 29% 50%;}
+    .img-5 {background-position: 30% 70%;}
+--------*/
 
  /*----------------------------------------------------------------*/
 /*----------------------- Kontaktformular -----------------------*/
