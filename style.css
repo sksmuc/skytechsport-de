@@ -13,27 +13,12 @@ a, header, img, h1 { border: 1px solid red; }
 /*-----------------------------------------------------------------*/
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: black;
     background-color: white;
 }
 img {   
     max-width: 100%;    
 }
 
-/*----------------------------------------------------------------
-/*----------------------------------------------------------------
-/*----------------------------------------------------------------
-[class*=grid] {  background-color: white; }
-[class*=col-] {  background-color: white; }
-body          {     background-color:white; }
------*/
-.plum-bg      {     background-color: plum; }
-.bg-grey       {    background-color: grey;}
-/*-----------------------------------------------------------------
------------------------------------------------------------------
------------------------------------------------------------------*/
 
 [class*=col-] {     
     padding:0%;
@@ -85,21 +70,78 @@ body          {     background-color:white; }
 */
 /*--------- Typography ------------*/
 
+body {
+    /*----font-family: 'Work Sans', sans-serif; ------*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #021a3c;
+}
+
+h1 {    font-size: 2.5rem;  }
+h2 {    font-size: 1.8rem; 
+        font-weight: 400;   }
+h3 {    font-size: 1.8rem;  }
+p   {   font-size: 1rem;    
+        line-height: 1.5rem;}
+
+h5 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height:1.2em;
+    letter-spacing: 0.2rem;
+}
+
+.banner-title {
+    font-size: 3.8rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.flex { display: flex; }
+
+
+span { 
+    display: block;
+    background-color: rgba(126, 14, 14, 0.7);
+    margin-bottom: 0.5rem; 
+    padding: 0rem 1.3rem;
+}
+
+
+
 a {
     color: inherit;
-    text-decoration: none;  }
+    text-decoration: none;  
+}
+
 
 a:hover { 
     color: red; 
 }
 
-h1 {
-    font-size: 1.8rem;
-}
-h2 {
-    font-size: 1.4rem;
+
+
+.light-text { color: white; }
+
+.button-style {
+    color: white;
+    background-color: rgba(126, 14, 14);
+    display: inline-block;
+    border: 1px solid rgba(126, 14, 14); 
+    border-radius: 30px; 
+    padding: 1rem 1.2rem;
+    margin: 2rem 0rem 0rem 0rem;
 }
 
+.button-style:hover {
+    color: rgba(126, 14, 14);
+    background-color:white;
+    border: 1px solid rgba(126, 14, 14);
+    transition: all 0.3s;
+}
 
 /*------------------------------------------------------------------------------*/
 /*----------------------------------- Header --------------------------------------*/
@@ -126,10 +168,7 @@ footer a:hover {
 }
 
 header img {
-    border-box: inline-block; 
     max-width: 240px;
-    display: flex-end;
-    justify-content: center;
 }
 
 footer img {
@@ -147,11 +186,11 @@ footer nav a {
 .copyright {
     font-size: 0.8rem;
     opacity: 0.5;
-    color: white;
 }
 .copyright a:hover {
     border: none;
 }
+
 
  /*----------------------------------------------------------------*/
  /*---------------- Institute Of Code -----------------------------*/
@@ -183,6 +222,26 @@ Columns can be hidden at breakpoints:
       background-color: #021a3c;
       background-position: center;
   }
+
+  .bg-blue {
+      background-color: #021a3c;
+  }
+
+  .bg-white {
+      background-color: white;
+  }
+
+  .bg-plum {
+      background-color: plum;
+  }
+
+  .bg-shiffrin {
+      background-image: url('/images/mikaela-shiffrin.jpg.webp');
+      min-height: 60vh;
+      background-color: #021a3c;
+      background-position: center;
+  }
+
 
  /*----------------------------------------------------------------*/
 /*----------------------- Kontaktformular -----------------------*/
@@ -239,11 +298,3 @@ Columns can be hidden at breakpoints:
         }
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
-
-.headline {
-    color: #c0392b;
-}
-
-.underline {
-    border-bottom:1px solid rot;
-}
