@@ -1,9 +1,15 @@
 
 /*----------------------------------- Temporary Styles --------------------------------------*/
 
-section div {
+/*
+section, div {
     border: 1px solid orange;
 }
+
+header, footer {
+    border: 1px solid red;
+}
+*/
 
 /*----------------------------------- Universal Styles --------------------------------------*/
 
@@ -31,6 +37,9 @@ img {
     margin: 0;
 }
 
+
+
+
 /*--------------------------------------------------------------------------------------------*/
 /*------------------------------------ Reusable Styles ---------------------------------------*/
 
@@ -43,9 +52,11 @@ img {
 .padded-1       {   padding:        1rem;   }
 .padded-2       {   padding:        2%;     }
 .padded-5       {   padding:        5%;     }
+.padded-10      {   padding:        5% 10%;    }
 .padded-b  { padding-bottom: 5%; }
+.padded-r { padding-right: 5%; }
 
-.padded-footer  {    padding:       5% 5% 2% 5%;  }
+.padded-footer  {    padding:       2% 5% 2% 5%;  }
 
 .padded-2-2     {   padding:        2% 0% 2% 2%;  }
 .margin-b-2     {   margin-bottom:  2rem;   }
@@ -358,5 +369,27 @@ Columns can be hidden at breakpoints:
         form p a {
           text-decoration: underline;
         }
-/*----------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------------------YouTube-------------------------------------------------------*/
+.youtube-container { 
+	max-width: 50%;
+}
+/* This is fancy CSS that you haven't learnt yet. No need to understand it yet, but you're welcome to copy & paste */
+.embed-container { 
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+  	top: 0; 
+  	left: 0; 
+  	width: 100%; 
+  	height: 100%; 
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
