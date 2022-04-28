@@ -123,6 +123,14 @@ h5 {
 
 .light-text   { color:  white;  }
 
+.ueberschrift {   
+                display: inline-block;
+                color: black;
+                font-family:'Courier New', Courier, monospace;
+                background-color: rgba(200,20,20,0.5);
+                margin-bottom: 5px;
+                padding: 0.5rem; }
+
 /*------------------------------------------------------------------------------*/
 /*----------------------------------- Links & Buttons --------------------------------------*/
 
