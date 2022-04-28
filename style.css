@@ -215,10 +215,18 @@ footer nav a {
     .flex-flip-sm { flex-direction: column-reverse; }
     }
 
-
+/*------------------*/
 @media(max-width: 64em) {
-    .center-md {text-align: center;}
+
+    .center-md {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .nav a .center-md { padding: 0.1rem; }
+    .header img { max-width: 25%; padding: 5%;}
 }
+/*------------------*/
+
      /*---------------- Gridlex and media-queries -----------------------
 @media (max-width: 36em) 	Max 576px 	_xs-*
 @media (max-width: 48em) 	Max 768px 	_sm-*
