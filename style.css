@@ -211,9 +211,14 @@ footer nav a {
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
     .hide-sm { display: none; }
-    .center-sm, .center-md { text-align: center; }
+    .center-sm{ text-align: center; }
     .flex-flip-sm { flex-direction: column-reverse; }
     }
+
+
+@media(max-width: 64em) {
+    .center-md {text-align: center;}
+}
      /*---------------- Gridlex and media-queries -----------------------
 @media (max-width: 36em) 	Max 576px 	_xs-*
 @media (max-width: 48em) 	Max 768px 	_sm-*
