@@ -1,4 +1,9 @@
 
+/*----------------------------------- Temporary Styles --------------------------------------*/
+
+section div {
+    border: 1px solid orange;
+}
 
 /*----------------------------------- Universal Styles --------------------------------------*/
 
@@ -46,6 +51,8 @@ img {
 .margin-b-2     {   margin-bottom:  2rem;   }
 .margin-2       {   margin:         2%;     }
 
+.box {  padding-left: 14%;
+        padding-right: 14%; }
 /*--------------------------------------------------------------------------------------------*/
 
 /* Utility Classes 
@@ -266,6 +273,26 @@ Columns can be hidden at breakpoints:
 .bg-us-event {
     background-image: url('/images/us-event.jpg.webp');
     background-color: #021a3c;
+}
+
+.bg-julia {
+    background-image: url('/images/bmw-julia.jpg');
+    background-color:#021a3c;
+}
+
+.bg-ski {
+    background-image: url('/images/simulator-ski.jpg');
+    background-color: white;
+}
+
+.bg-training-snowboard {
+    background-image: url('/images/training-snowboard.jpg.webp');
+    background-color: rgba(126, 14, 14);
+}
+
+.bg-simulator-snowboard {
+    background-image: url('/images/simulator-snowboard.jpg');
+    background-color: rgba(126, 14, 14);
 }
 
    /* Section: "Training und Events" -------------------------------------------------------------------- */
