@@ -53,8 +53,9 @@ img {
 .padded-2       {   padding:        2%;     }
 .padded-5       {   padding:        5%;     }
 .padded-10      {   padding:        5% 10%;    }
-.padded-b  { padding-bottom: 5%; }
-.padded-r { padding-right: 5%; }
+.padded-b       { padding-bottom: 5%; }
+.padded-r       { padding-right: 5%; }
+.padded-t       { padding-top: 5%;}
 
 .padded-footer  {    padding:       2% 5% 2% 5%;  }
 
@@ -125,9 +126,8 @@ h5 {
 
 .ueberschrift {   
                 display: inline-block;
-                color: black;
-                font-family:'Courier New', Courier, monospace;
-                background-color: rgba(200,20,20,0.5);
+                color: white;;
+                background-color: rgba(200,20,20);
                 margin-bottom: 5px;
                 padding: 0.5rem; }
 
@@ -205,6 +205,26 @@ footer nav a {
 .copyright a:hover {    border: none;                   }
 .copyright p {          font-size: 0.7rem;           }
 
+.link       {
+    padding: 0.25rem;
+    border-bot: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.link:hover {   
+    border-bottom: 1px solid red;    
+}
+
+.light-link       {
+    padding: 0.25rem;
+    border-bot: inline-block;
+    border-bottom: 1px solid white;
+}
+
+.light-link:hover {   
+    border-bottom: 1px solid red;    
+}
+
 
  /*----------------------------------------------------------------*/
  /*---------------- Institute Of Code -----------------------------*/
@@ -220,10 +240,10 @@ footer nav a {
 
     .center-md {
         text-align: center;
-        font-size: 1.5rem;
-    }
-    .nav a .center-md { padding: 0.1rem; }
-    .header img { max-width: 25%; padding: 5%;}
+        font-size: 1.8rem;}
+    header a { padding: 1rem; }
+    header img { max-width: 50%;}
+    header { min-height: 20vh; }
 }
 /*------------------*/
 
@@ -307,6 +327,11 @@ Columns can be hidden at breakpoints:
     background-color: #021a3c;
 }
 
+.bg-us-team {
+    background-image: url('/images/training-featured.png.webp');
+    background-color: #021a3c;
+}
+
 .bg-julia {
     background-image: url('/images/bmw-julia.jpg');
     background-color:#021a3c;
@@ -325,6 +350,20 @@ Columns can be hidden at breakpoints:
 .bg-simulator-snowboard {
     background-image: url('/images/simulator-snowboard.jpg');
     background-color: rgba(126, 14, 14);
+}
+
+.club-showroom {
+    background-image: url('/images/club-showroom.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bmw-yellow-crop {
+    background-image: url('/images/bmw-yellow-crop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
    /* Section: "Training und Events" -------------------------------------------------------------------- */
