@@ -87,6 +87,9 @@ img {
 .padded-b-0 { padding-bottom: 0; }
 .padded-t-0 { padding-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
+
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Sans Pro', sans-serif;
 */
 /*-------------------------------------------------------------------------------------*/
 /*----------------------------------- Typography --------------------------------------*/
@@ -126,7 +129,8 @@ h5 {
 
 .ueberschrift {   
                 display: inline-block;
-                color: white;;
+                color: white;
+                font-family: 'Anybody', sans-serif;
                 background-color: rgba(200,20,20);
                 margin-bottom: 5px;
                 padding: 0.5rem; }
@@ -140,23 +144,23 @@ a {
 }
 
 a:hover { 
-    color: red; 
+    color: rgba(200,20,20); 
 }
 
 .button-style {
     color: white;
-    background-color: rgba(126, 14, 14);
+    background-color: rgba(200,20,20);
     display: inline-block;
-    border: 1px solid rgba(126, 14, 14); 
+    border: 1px solid rgba(200,20,20); 
     border-radius: 30px; 
     padding: 1rem 1.2rem;
     margin: 2rem 0rem 0rem 0rem;
 }
 
 .button-style:hover {
-    color: rgba(126, 14, 14);
+    color: rgba(200,20,20);
     background-color:white;
-    border: 1px solid rgba(126, 14, 14);
+    border: 1px solid rgba(200,20,20);
     transition: all 0.3s;
 }
 
@@ -173,7 +177,7 @@ header a {
         }
 
         header a:hover {   
-            border-bottom: 1px solid red;    
+            border-bottom: 1px solid rgba(200,20,20);    
         }
 
 footer a {  
@@ -212,7 +216,7 @@ footer nav a {
 }
 
 .link:hover {   
-    border-bottom: 1px solid red;    
+    border-bottom: 1px solid rgba(200,20,20);    
 }
 
 .light-link       {
@@ -222,7 +226,7 @@ footer nav a {
 }
 
 .light-link:hover {   
-    border-bottom: 1px solid red;    
+    border-bottom: 1px solid rgba(200,20,20);    
 }
 
 
@@ -344,12 +348,12 @@ Columns can be hidden at breakpoints:
 
 .bg-training-snowboard {
     background-image: url('/images/training-snowboard.jpg.webp');
-    background-color: rgba(126, 14, 14);
+    background-color: rgba(200,20,20);
 }
 
 .bg-simulator-snowboard {
     background-image: url('/images/simulator-snowboard.jpg');
-    background-color: rgba(126, 14, 14);
+    background-color: rgba(200,20,20);
 }
 
 .club-showroom {
@@ -390,7 +394,7 @@ Columns can be hidden at breakpoints:
       
       form input:focus, 
       form textarea:focus {
-        border-color: #c0392b;
+        border-color: rgba(200,20,20);
       }
       
       textarea {
@@ -401,14 +405,14 @@ Columns can be hidden at breakpoints:
         /*---- change label from default display inline-block to display: block to set custom margin ----*/
         display: block;
         margin-top: 1rem;
-          color: #c0392b;
+          color: rgba(200,20,20);
           font-weight: bold;
         }
         
         form button {
-          background-color: #c0392b;
+          background-color: rgba(200,20,20);
           color: white;
-          border: 1px solid #c0392b;
+          border: 1px solid rgba(200,20,20);
           padding: 1rem 2rem;
           margin: 1rem 0;
           letter-spacing: 0.5rem 0;
@@ -417,7 +421,7 @@ Columns can be hidden at breakpoints:
         button:hover {
             color: #c0392b;
             background-color: white;
-            border: 1px solid #c0392b;
+            border: 1px solid rgba(200,20,20);
           }
 
           .pointer { cursor: pointer; }
