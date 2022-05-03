@@ -370,6 +370,13 @@ Columns can be hidden at breakpoints:
     background-repeat: no-repeat;
 }
 
+.abfahrt-2 {
+    background-image: url('/images/abfahrt-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
    /* Section: "Training und Events" -------------------------------------------------------------------- */
 
 /*----- Background Position Examples 
