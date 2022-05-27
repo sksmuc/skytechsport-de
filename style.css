@@ -1,15 +1,7 @@
 
 /*----------------------------------- Temporary Styles --------------------------------------*/
 
-/*
-section, div {
-    border: 1px solid orange;
-}
 
-header, footer {
-    border: 1px solid red;
-}
-*/
 
 /*----------------------------------- Universal Styles --------------------------------------*/
 
@@ -60,6 +52,7 @@ img {
 .padded-footer  {    padding:       2% 5% 2% 5%;  }
 
 .padded-2-2     {   padding:        2% 0% 2% 2%;  }
+.padded-b-0     {   padding:        5% 5% 0% 5%;}
 .margin-b-2     {   margin-bottom:  2rem;   }
 .margin-2       {   margin:         2%;     }
 
@@ -93,6 +86,18 @@ font-family: 'Source Sans Pro', sans-serif;
 */
 /*-------------------------------------------------------------------------------------*/
 /*----------------------------------- Typography --------------------------------------*/
+/*----- /* Universal Styles 
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+ ----------*/
 
 
 body {
@@ -102,7 +107,8 @@ body {
     color: #021a3c;
 }
 
-p  {    font-size:      1.1rem;    
+p  {    
+    font-size:      1.1rem;    
     line-height:    1.5rem;     
 }
 
@@ -121,7 +127,7 @@ h5 {
         color: white;
         font-size: 3rem;
         font-weight: 700;
-        line-height:1.2em;
+        line-height:1.4em;
         letter-spacing: 0.2rem;
 }
 
@@ -129,9 +135,10 @@ h5 {
 
 .ueberschrift {   
                 display: inline-block;
-                color: white;
-                font-family: 'Anybody', sans-serif;
-                background-color: rgba(200,20,20);
+                color: rgba(200,20,20);
+                font-family: 'Source Sans Pro', sans-serif;
+                font-style: italic;
+                font-weight: 900;
                 margin-bottom: 5px;
                 padding: 0.5rem; }
 
@@ -250,6 +257,8 @@ footer nav a {
     header { min-height: 20vh; }
 }
 /*------------------*/
+
+
 
      /*---------------- Gridlex and media-queries -----------------------
 @media (max-width: 36em) 	Max 576px 	_xs-*
@@ -464,3 +473,121 @@ Columns can be hidden at breakpoints:
 }
 /*--------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
+
+.bg-leader-pro { 
+    background-image: url('/images/simulators/leader-pro.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-president { 
+    background-image: url('/images/simulators/president.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-president-lux { 
+    background-image: url('/images/simulators/president-lux.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-olymp { 
+    background-image: url('/images/simulators/olymp.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.card {
+    background-color: white;
+    padding: 0;
+    border: 2rem solid #021a3c;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  } 
+
+.bg-leader-pro span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-president span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-president-lux span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-olymp span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 36em) {
+    .horizontal-scroll {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    } 
+    
+    .mob-padded-0 {
+     padding: 0;
+    }
+    .mob-padded {
+      padding: 5%;
+    }
+    
+    .unsere-simulatoren .card {
+      margin: 0.2rem;
+      margin-bottom: 5%;
+    }
+    
+     .unsere-simulatoren .card:first-child {
+      margin-left: 5rem;
+    }
+      .unsere-simulatoren .card:last-child {
+      margin-right: 5rem;
+    }
+  }
+
+  /*--------------------------------------------------------------------------------------------------------*/
+
+
+  ul {
+      font-size: 1rem;
+      line-height: 1.3rem;
+  }
+
+  .underline {
+      border-bottom: 1px solid white;
+  }
