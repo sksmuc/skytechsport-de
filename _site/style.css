@@ -1,0 +1,593 @@
+
+/*----------------------------------- Temporary Styles --------------------------------------*/
+
+
+
+/*----------------------------------- Universal Styles --------------------------------------*/
+
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+img {   
+    max-width: 100%;    
+}
+
+[class*=col-] {     
+    padding:0;
+    margin: 0; 
+}
+
+.class-grid {
+    padding: 2%;
+    margin: 0;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------ Reusable Styles ---------------------------------------*/
+
+.left           {   text-align:     left;   }
+.center         {   text-align:     center; }
+.right          {   text-align:     right;  }
+
+.padded         {   padding:        5%;     }
+.padded-0       {   padding:        0;      }
+.padded-1       {   padding:        1rem;   }
+.padded-2       {   padding:        2%;     }
+.padded-5       {   padding:        5%;     }
+.padded-10      {   padding:        5% 10%;    }
+.padded-b       { padding-bottom: 5%; }
+.padded-r       { padding-right: 5%; }
+.padded-t       { padding-top: 5%;}
+
+.padded-footer  {    padding:       2% 5% 2% 5%;  }
+
+.padded-2-2     {   padding:        2% 0% 2% 2%;  }
+.padded-b-0     {   padding:        5% 5% 0% 5%;}
+.margin-b-2     {   margin-bottom:  2rem;   }
+.margin-2       {   margin:         2%;     }
+
+.box {  padding-left: 14%;
+        padding-right: 14%; }
+/*--------------------------------------------------------------------------------------------*/
+
+/* Utility Classes 
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 5%;    }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+
+.padded-t  { padding-top: 5%;    }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%;   }
+.padded-r  { padding-right: 5%;  }
+
+.padded-0 { padding: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-t-0 { padding-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------------- Typography --------------------------------------*/
+/*----- /* Universal Styles 
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+ ----------*/
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Work Sans', sans-serif; */
+    font-weight: 300;
+    color: #021a3c;
+}
+
+p  {    
+    font-size:      1.1rem;    
+    line-height:    1.5rem;     
+}
+
+h1 {    font-size:      2.5rem;     
+}
+
+h2 {    font-size:      1.8rem; 
+        font-weight:    400;
+        margin:         2rem;       
+}
+
+h3 {    font-size:      1.8rem;     
+}
+
+h5 {
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height:1.4em;
+        letter-spacing: 0.2rem;
+}
+
+.light-text   { color:  white;  }
+
+.ueberschrift {   
+                display: inline-block;
+                color: rgba(200,20,20);
+                font-family: 'Source Sans Pro', sans-serif;
+                font-style: italic;
+                font-weight: 900;
+                margin-bottom: 5px;
+                padding: 0.5rem; }
+
+/*------------------------------------------------------------------------------*/
+/*----------------------------------- Links & Buttons --------------------------------------*/
+
+a {
+    color: inherit;
+    text-decoration: none;  
+}
+
+a:hover { 
+    color: rgba(200,20,20); 
+}
+
+.button-style {
+    color: white;
+    background-color: rgba(200,20,20);
+    display: inline-block;
+    border: 1px solid rgba(200,20,20); 
+    border-radius: 30px; 
+    padding: 1rem 1.2rem;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.button-style:hover {
+    color: rgba(200,20,20);
+    background-color:white;
+    border: 1px solid rgba(200,20,20);
+    transition: all 0.3s;
+}
+
+/*------------------------------------------------------------------------------*/
+/*----------------------------------- Header --------------------------------------*/
+header {
+    background-color: white;
+/*padding 2% is in the code of universal GRID on the top*/
+}
+
+header a {  
+            padding: 0.25rem; 
+            border-box: inline-block;
+        }
+
+        header a:hover {   
+            border-bottom: 1px solid rgba(200,20,20);    
+        }
+
+footer a {  
+    margin: 0rem 0.5rem;    
+}
+
+footer a:hover { 
+    border: none;      
+}
+
+header img {
+    max-width: 240px;
+}
+
+footer img {
+    max-width: 200px;
+}
+
+footer p, h4 {
+    margin: 0.5rem;
+}
+
+footer nav a {
+    display: block;
+}
+
+.copyright {            opacity: 0.5;
+                        padding: 0rem 0rem 1.5rem 0rem; }
+.copyright a:hover {    border: none;                   }
+.copyright p {          font-size: 0.7rem;           }
+
+.link       {
+    padding: 0.25rem;
+    border-bot: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.link:hover {   
+    border-bottom: 1px solid rgba(200,20,20);    
+}
+
+.light-link       {
+    padding: 0.25rem;
+    border-bot: inline-block;
+    border-bottom: 1px solid white;
+}
+
+.light-link:hover {   
+    border-bottom: 1px solid rgba(200,20,20);    
+}
+
+
+ /*----------------------------------------------------------------*/
+ /*---------------- Institute Of Code -----------------------------*/
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+    .hide-sm { display: none; }
+    .center-sm{ text-align: center; }
+    .flex-flip-sm { flex-direction: column-reverse; }
+    }
+
+/*------------------*/
+@media(max-width: 64em) {
+
+    .center-md {
+        text-align: center;
+        font-size: 1.8rem;}
+    header a { padding: 1rem; }
+    header img { max-width: 50%;}
+    header { min-height: 20vh; }
+}
+/*------------------*/
+
+
+
+     /*---------------- Gridlex and media-queries -----------------------
+@media (max-width: 36em) 	Max 576px 	_xs-*
+@media (max-width: 48em) 	Max 768px 	_sm-*
+@media (max-width: 64em) 	Max 1024px 	_md-*
+@media (max-width: 80em) 	Max 1280px 	_lg-*
+
+Columns can be hidden at breakpoints:
+<div class="col-12 lg-hidden"></div>
+<div class="col-12 md-hidden"></div>
+<div class="col-12 sm-hidden"></div>
+<div class="col-12 xs-hidden"></div>
+     ------*/
+
+
+/*--------------------- Background ---- ---------------------------*/
+/*-----------------------------------------------------------------*/
+.bg {
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 50%;
+    height: 300px;
+    border: 15px solid #021a3c;
+}
+
+/*-----------------------------------------------------------------*/
+  /*--------------------- Background Colours ---------------------------*/
+
+  .bg-dark {
+    background-color: #021a3c;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.bg-plum {
+    background-color: plum;
+}
+/*-----------------------------------------------------------------*/
+ /*--------------------- Background Images ---------------------------*/
+
+
+  .bg-featured {
+    background-image: url('/images/bmw-3.jpg');
+    background-color: #021a3c;
+}
+
+  .bg-shiffrin {
+      background-image: url('/images/mikaela-shiffrin.jpg.webp');
+      background-color: #021a3c;
+  }
+
+  .bg-greenboots {
+    background-image: url('/images/bmw-green-boots.jpg.webp');
+    background-color: #021a3c;
+}
+
+.bg-panoramalight {
+    background-image: url('/images/panorama-light.jpg.webp');
+    background-color: #021a3c;
+}
+
+.bg-sochi {
+    background-image: url('/images/sochi-abfahrt.jpg.webp');
+    background-color: #021a3c;
+}
+
+.bg-us-event {
+    background-image: url('/images/us-event.jpg.webp');
+    background-color: #021a3c;
+}
+
+.bg-us-team {
+    background-image: url('/images/training-featured.png.webp');
+    background-color: #021a3c;
+}
+
+.bg-julia {
+    background-image: url('/images/bmw-julia.jpg');
+    background-color:#021a3c;
+}
+
+.bg-ski {
+    background-image: url('/images/simulator-ski.jpg');
+    background-color: white;
+}
+
+.bg-training-snowboard {
+    background-image: url('/images/training-snowboard.jpg.webp');
+    background-color: rgba(200,20,20);
+}
+
+.bg-simulator-snowboard {
+    background-image: url('/images/simulator-snowboard.jpg');
+    background-color: rgba(200,20,20);
+}
+
+.club-showroom {
+    background-image: url('/images/club-showroom.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bmw-yellow-crop {
+    background-image: url('/images/bmw-yellow-crop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.abfahrt-2 {
+    background-image: url('/images/abfahrt-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+   /* Section: "Training und Events" -------------------------------------------------------------------- */
+
+/*----- Background Position Examples 
+    .img-1 {background-position: 20% 50%;}
+    .img-2 {background-position: 100% 49%;}
+    .img-3 {background-position: center;}
+    .img-4 {background-position: 29% 50%;}
+    .img-5 {background-position: 30% 70%;}
+--------*/
+
+ /*----------------------------------------------------------------*/
+/*----------------------- Kontaktformular -----------------------*/
+    form input, form textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+        border: 2px solid grey;
+        padding: 0.5rem;
+        outline: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+      
+      form input:focus, 
+      form textarea:focus {
+        border-color: rgba(200,20,20);
+      }
+      
+      textarea {
+        min-height: 9rem;
+      }
+    
+      form label {
+        /*---- change label from default display inline-block to display: block to set custom margin ----*/
+        display: block;
+        margin-top: 1rem;
+          color: rgba(200,20,20);
+          font-weight: bold;
+        }
+        
+        form button {
+          background-color: rgba(200,20,20);
+          color: white;
+          border: 1px solid rgba(200,20,20);
+          padding: 1rem 2rem;
+          margin: 1rem 0;
+          letter-spacing: 0.5rem 0;
+        }
+
+        button:hover {
+            color: #c0392b;
+            background-color: white;
+            border: 1px solid rgba(200,20,20);
+          }
+
+          .pointer { cursor: pointer; }
+    
+        form p {
+            font-size: 0.7rem;
+        }
+    
+        form p a {
+          text-decoration: underline;
+        }
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------------------YouTube-------------------------------------------------------*/
+.youtube-container { 
+	max-width: 50%;
+}
+/* This is fancy CSS that you haven't learnt yet. No need to understand it yet, but you're welcome to copy & paste */
+.embed-container { 
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+  	top: 0; 
+  	left: 0; 
+  	width: 100%; 
+  	height: 100%; 
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.bg-leader-pro { 
+    background-image: url('/images/simulators/leader-pro.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-president { 
+    background-image: url('/images/simulators/president.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-president-lux { 
+    background-image: url('/images/simulators/president-lux.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+.bg-olymp { 
+    background-image: url('/images/simulators/olymp.jpg');
+    background-color: white;
+    color: rgba(200,20,20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+    margin: 1rem;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.card {
+    background-color: white;
+    padding: 0;
+    border: 2rem solid #021a3c;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  } 
+
+.bg-leader-pro span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-president span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-president-lux span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-olymp span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 36em) {
+    .horizontal-scroll {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    } 
+    
+    .mob-padded-0 {
+     padding: 0;
+    }
+    .mob-padded {
+      padding: 5%;
+    }
+    
+    .unsere-simulatoren .card {
+      margin: 0.2rem;
+      margin-bottom: 5%;
+    }
+    
+     .unsere-simulatoren .card:first-child {
+      margin-left: 5rem;
+    }
+      .unsere-simulatoren .card:last-child {
+      margin-right: 5rem;
+    }
+  }
+
+  /*--------------------------------------------------------------------------------------------------------*/
+
+
+  ul {
+      font-size: 1rem;
+      line-height: 1.3rem;
+  }
+
+  .underline {
+      border-bottom: 1px solid white;
+  }
