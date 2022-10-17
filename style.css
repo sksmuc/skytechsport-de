@@ -1,22 +1,12 @@
 
 /*----------------------------------- Temporary Styles --------------------------------------*/
 
-
-
 /*----------------------------------- Universal Styles --------------------------------------*/
 
 * {
     box-sizing: border-box; 
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: white;
-}
-
-img {   
-    max-width: 100%;    
 }
 
 [class*=col-] {     
@@ -29,11 +19,13 @@ img {
     margin: 0;
 }
 
-
+body {
+  background-color: white;
+}
 
 
 /*--------------------------------------------------------------------------------------------*/
-/*------------------------------------ Reusable Styles ---------------------------------------*/
+/*------------------------------------ Reusable Styles / Utility Classes ---------------------------------------*/
 
 .left           {   text-align:     left;   }
 .center         {   text-align:     center; }
@@ -44,10 +36,11 @@ img {
 .padded-1       {   padding:        1rem;   }
 .padded-2       {   padding:        2%;     }
 .padded-5       {   padding:        5%;     }
-.padded-10      {   padding:        5% 10%;    }
-.padded-b       { padding-bottom: 5%; }
-.padded-r       { padding-right: 5%; }
-.padded-t       { padding-top: 5%;}
+.padded-10      {   padding:        5% 10%; }
+.padded-b       { padding-bottom:   5%;     }
+.padded-l       { padding-left:     5%;     }
+.padded-r       { padding-right:    5%;     }
+.padded-t       { padding-top:      5%;     }
 
 .padded-footer  {    padding:       2% 5% 2% 5%;  }
 
@@ -56,45 +49,14 @@ img {
 .margin-b-2     {   margin-bottom:  2rem;   }
 .margin-2       {   margin:         2%;     }
 
-.box {  padding-left: 14%;
-        padding-right: 14%; }
+.box            {  padding-left:    14%;
+                    padding-right: 14%;     }
 /*--------------------------------------------------------------------------------------------*/
-
-/* Utility Classes 
-.tall-50 { min-height: 50vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
-
-.padded    { padding: 5%;    }
-.padded-1  { padding: 1rem;  }
-.padded-2  { padding: 2rem;  }
-
-.padded-t  { padding-top: 5%;    }
-.padded-b  { padding-bottom: 5%; }
-.padded-l  { padding-left: 5%;   }
-.padded-r  { padding-right: 5%;  }
-
-.padded-0 { padding: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-t-0 { padding-top: 0; }
-.margin-b-0 { margin-bottom: 0; }
-
-font-family: 'Roboto Slab', serif;
-font-family: 'Source Sans Pro', sans-serif;
-*/
 /*-------------------------------------------------------------------------------------*/
 /*----------------------------------- Typography --------------------------------------*/
 /*----- /* Universal Styles 
 h2, h3, h4, h5, h6 {
     line-height: 1.1;
-    margin-bottom: 0.8rem;
-}
-
-p {
-    line-height: 1.2;
-    font-size: 0.9rem;
     margin-bottom: 0.8rem;
 }
  ----------*/
@@ -171,22 +133,7 @@ a:hover {
     transition: all 0.3s;
 }
 
-/*------------------------------------------------------------------------------*/
-/*----------------------------------- Header --------------------------------------*/
-header {
-    background-color: white;
-/*padding 2% is in the code of universal GRID on the top*/
-}
-
-header a {  
-            padding: 0.25rem; 
-            border-box: inline-block;
-        }
-
-        header a:hover {   
-            border-bottom: 1px solid rgba(200,20,20);    
-        }
-
+/*----------------------------------- Footer --------------------------------------*/
 footer a {  
     margin: 0rem 0.5rem;    
 }
@@ -272,10 +219,22 @@ Columns can be hidden at breakpoints:
 <div class="col-12 sm-hidden"></div>
 <div class="col-12 xs-hidden"></div>
      ------*/
+     
 
 
-/*--------------------- Background ---- ---------------------------*/
+/*--------------------- Images and Backgrounds ---------------------------*/
+
+img {   
+  max-width: 100%;    
+}
+
+.navbar img {
+max-width: 200px;
+}
+
 /*-----------------------------------------------------------------*/
+
+
 .bg {
     min-height: 60vh;
     background-size: cover;
@@ -416,7 +375,7 @@ Columns can be hidden at breakpoints:
       textarea {
         min-height: 9rem;
       }
-    
+
       form label {
         /*---- change label from default display inline-block to display: block to set custom margin ----*/
         display: block;
@@ -472,7 +431,7 @@ Columns can be hidden at breakpoints:
   	height: 100%; 
 }
 /*--------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------*/
+/*-------------------------- SALES ---------------------------------------------------*/
 
 .bg-leader-pro { 
     background-image: url('/images/simulators/leader-pro.jpg');
@@ -517,7 +476,6 @@ Columns can be hidden at breakpoints:
     padding-bottom: 50vh;
     margin: 1rem;
 }
-
 
 /*--------------------------------------------------------------------------------------------------------*/
 
@@ -590,4 +548,89 @@ Columns can be hidden at breakpoints:
 
   .underline {
       border-bottom: 1px solid white;
+  }
+
+
+  /*--------------------- Hamburger-Menu CSS  ---------------------------*/
+
+  li {
+    list-style: none;
+  }
+  
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; - what do I need to change this to so that it doesn't overflow?? */ 
+
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-branding {
+    font-size: 2rem;
+  }
+  
+  .nav-link {
+    transition: 0.5s ease;
+  }
+  
+  .nav-link:hover{
+    color: rgba(200,20,20);
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: rgba(200,20,20);
+  }
+  
+  @media(max-width:768px){
+    .hamburger{
+      display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+      .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+    
+    .nav-item {
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active {
+      left: 0;
+    }
   }
