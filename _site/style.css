@@ -93,6 +93,10 @@ h5 {
         letter-spacing: 0.2rem;
 }
 
+h6 {
+  font-size: 0.9rem;
+}
+
 .light-text   { color:  white;  }
 
 .ueberschrift {   
