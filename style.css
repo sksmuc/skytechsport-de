@@ -444,7 +444,7 @@ max-width: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 50vh;
+    padding-bottom: 50%;
     margin: 1rem;
 }
 
@@ -455,7 +455,7 @@ max-width: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 50vh;
+    padding-bottom: 50%;
     margin: 1rem;
 }
 
@@ -466,7 +466,7 @@ max-width: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 50vh;
+   padding-bottom: 50%;
     margin: 1rem;
 }
 
@@ -477,7 +477,7 @@ max-width: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 50vh;
+    padding-bottom: 50%;
     margin: 1rem;
 }
 
