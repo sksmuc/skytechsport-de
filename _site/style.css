@@ -205,7 +205,8 @@ footer nav a {
         font-size: 1.8rem;}
     header a { padding: 1rem; }
     header img { max-width: 50%;}
-    header { min-height: 20vh; }
+    /* no min-height needed in header?!?!?! 
+    header { min-height: 20vh; }  */
 }
 /*------------------*/
 
@@ -574,7 +575,8 @@ max-width: 200px;
   .nav-menu {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 1rem;
+    /* gap: 60px oder rem?????? */
   }
   
   .nav-branding {
