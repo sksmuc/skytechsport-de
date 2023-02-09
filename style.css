@@ -574,7 +574,7 @@ max-width: 200px;
   .nav-menu {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
   }
   
   .nav-branding {
