@@ -23,7 +23,18 @@ body {
   background-color: white;
 }
 
+.en-banner {
+  font-size: 1rem;
+  background-color: rgba(200,20,20);
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
 
+.en-banner-link:hover {
+  font-weight: bold;
+  color: white;
+}
 /*--------------------------------------------------------------------------------------------*/
 /*------------------------------------ Reusable Styles / Utility Classes ---------------------------------------*/
 
