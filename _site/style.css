@@ -180,7 +180,7 @@ footer nav a {
 
 .link       {
     padding: 0.25rem;
-    border-bot: inline-block;
+    border-box: inline-block;
     border-bottom: 1px solid black;
 }
 
@@ -190,7 +190,7 @@ footer nav a {
 
 .light-link       {
     padding: 0.25rem;
-    border-bot: inline-block;
+    border-box: inline-block;
     border-bottom: 1px solid white;
 }
 

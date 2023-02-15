@@ -1,0 +1,49 @@
+---
+layout: default
+title: Standorte
+locations:
+-   city: München <br> (Bayern)
+    store: SkyTechSport Club (Headoffice)
+    url: https://skytechsport.de
+    website: skytechsport.de
+-   city: Schönenberg-Kübelberg <br> (Rheinland-Pfalz)
+    store: Alpenski- und Snowboardgeräte Grelich
+    url: https://skytechsport.grelich.com
+    website: skytechsport.grelich.com
+-   city: Offenburg <br> (Baden-Württemberg)
+    store: Sport Kuhn
+    url: https://sport-kuhn.de
+    website: sport-kuhn.de
+-   city: Friedberg <br> (Bayern)
+    store: Sport Store Förg
+    url: https://foerg.de
+    website: foerg.de
+---
+
+
+
+<section class="grid padded bg-dark light-text">
+    <div class="col-12 center">
+        <p> Hier ist eine Auflistung on mehreren Studios weltweit, bei denen man unsere exklusiven  Ski- und Snowboard Simulatoren fahren kann.</p>
+    </div>
+</section>
+
+
+<section class="grid padded">
+    {% for item in page.locations %}
+    <div class="col-3_md-4_sm-6 center padded">
+
+        <h1>Header 1</h1>
+        <h2> Header 2</h2>
+        <h3> Header 3</h3> 
+        <h4> Header 4</h4> 
+        <h5 class="bg-dark"> Header 5</h5>
+        <h6> Header 6</h6>
+        <h2> {{item.city}}
+        </h2><br>
+        <p>{{item.store}}<br><br>
+            <a href="{{item.url}}" class="light-link">{{item.website}}</a>
+    </div>
+    {% endfor %}
+    </section>
+
