@@ -686,3 +686,69 @@ max-width: 200px;
     font-size: 20px;
   }
 }
+
+/* SkyTechSport – neue Navigation */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 72px;
+  padding: 10px 4%;
+  background: #fff;
+}
+
+.nav-branding img {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #151923;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #f50032;
+}
+
+.language-flags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.language-flags a {
+  font-size: 23px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    gap: 14px;
+  }
+}
