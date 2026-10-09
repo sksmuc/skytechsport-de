@@ -14,7 +14,7 @@ layout: default
     box-sizing: border-box;
     background-size: cover;
     background-image: url('/images/bmw-3.jpg');
-    background-position: center;
+    background-position: center 68%;
 }
 
 .skytech-hero::before {
@@ -71,7 +71,7 @@ layout: default
 .skytech-hero-actions a {
     display: inline-block;
     padding: 0.9rem 1.3rem;
-    border: 2px solid #fff;
+    border: 2px solid #111;
     border-radius: 6px;
     color: #fff;
     font-weight: bold;
@@ -79,14 +79,19 @@ layout: default
 }
 
 .skytech-hero-actions a:first-child {
-    background: #fff;
-    color: #10283d;
+    background: #cf171e;
+    border-color: #cf171e;
+    color: #fff;
+}
+
+.skytech-hero-actions a:nth-child(2) {
+    background: #111;
+    border-color: #111;
+    color: #fff;
 }
 
 .skytech-hero-actions a:hover {
-    background: #dceeff;
-    border-color: #dceeff;
-    color: #10283d;
+    filter: brightness(1.15);
 }
 
 .skytech-hero-actions a:focus-visible {
@@ -100,7 +105,7 @@ layout: default
     border: 5px solid #14283c;
     border-radius: 12px;
     background: #000;
-    transform: rotate(4deg);
+    transform: rotate(9deg);
     box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.55),
         0 0 25px rgba(100, 190, 255, 0.25);
@@ -128,7 +133,7 @@ layout: default
     }
 
     .skytech-hero-video {
-        transform: rotate(-2deg);
+        transform: rotate(5deg);
     }
 }
 </style>
