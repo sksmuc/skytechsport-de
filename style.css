@@ -789,3 +789,11 @@ z-index: 1000;
     margin-left: 0;
   }
 }
+
+/* Hauptmenü auf großen Bildschirmen etwas nach rechts rücken */
+@media (min-width: 1100px) {
+  .navbar .nav-menu {
+    position: relative;
+    left: 28px;
+  }
+}
