@@ -14,7 +14,7 @@ layout: default
     box-sizing: border-box;
     background-size: cover;
     background-image: url('/images/bmw-3.jpg');
-    background-position: 72% 68%;
+    background-position: 100% 68%;
 }
 
 .skytech-hero::before {
@@ -136,6 +136,46 @@ layout: default
         transform: perspective(1100px) rotateY(-9deg) rotate(3deg);
     }
 }
+
+/* Vorteile direkt unter dem Titelbild */
+.skytech-benefits {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.2rem;
+    padding: 2rem 5%;
+    background: #0d1016;
+    color: #fff;
+}
+.skytech-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+    min-width: 0;
+}
+.skytech-benefit i {
+    color: #f20b32;
+    font-size: 2rem;
+    flex-shrink: 0;
+    margin-top: .2rem;
+}
+.skytech-benefit h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin: 0 0 .4rem;
+}
+.skytech-benefit p {
+    color: #e0e0e0;
+    font-size: .9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .skytech-benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+    .skytech-benefits { grid-template-columns: 1fr; padding: 2rem 7%; }
+}
 </style>
 
 <section class="grid">
@@ -167,4 +207,12 @@ layout: default
             </iframe>
         </div>
     </div>
+</section>
+
+<section class="skytech-benefits" aria-label="Vorteile des SkyTechSport Simulators">
+    <div class="skytech-benefit"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><div><h3>Vom Anfänger<br>bis zum Profi</h3><p>Schnelle Fortschritte durch gezieltes Training</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-users" aria-hidden="true"></i><div><h3>Für Trainer<br>und Athleten</h3><p>Technik analysieren und gezielt verbessern</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><div><h3>Ganzjähriges<br>Training</h3><p>Unabhängig von Wetter und Skisaison</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-mountain" aria-hidden="true"></i><div><h3>Realistisches<br>Fahrgefühl</h3><p>Modernste Simulation mit echter Dynamik</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><h3>Sicher und<br>effizient</h3><p>Ohne Risiko, mit maximalem Trainingseffekt</p></div></div>
 </section>
