@@ -23,12 +23,8 @@ layout: default
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(
-        90deg,
-        rgba(5, 18, 32, 0.90),
-        rgba(5, 18, 32, 0.50) 55%,
-        rgba(5, 18, 32, 0.20)
-    );
+    background: linear-gradient(180deg, rgba(9, 48, 171, 0.48) 0%, rgba(9, 48, 171, 0.20) 34%, rgba(4, 17, 37, 0.10) 75%),
+                linear-gradient(90deg, rgba(5, 18, 32, 0.88), rgba(5, 18, 32, 0.46) 55%, rgba(5, 18, 32, 0.17));
 }
 
 .skytech-hero-copy,
@@ -52,12 +48,27 @@ layout: default
 .skytech-brand-accent { color: #f20b32; }
 
 .skytech-hero-copy h1 {
-    margin: 0 0 1.5rem;
+    margin: 0 0 .65rem;
     color: #fff;
     font-size: clamp(1.8rem, 3.5vw, 3.2rem);
     line-height: 1.12;
 }
 
+.skytech-hero-copy .skytech-studio-line {
+    color: #fff;
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 1rem;
+}
+.skytech-hero-copy .skytech-studio-line::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    margin-top: .8rem;
+    background: #f20b32;
+}
 .skytech-hero-copy p {
     color: #fff;
     font-size: 1.15rem;
@@ -187,6 +198,8 @@ layout: default
             <p class="skytech-brand">SKYTECH<span class="skytech-brand-accent">SPORT</span></p>
 
             <h1>Trainiere wie ein Profi.<br>Das ganze Jahr.</h1>
+
+            <p class="skytech-studio-line">Im Studio in München oder<br>am eigenen Simulator.</p>
 
             <p>
                 Skifahren und Snowboarden<br>
