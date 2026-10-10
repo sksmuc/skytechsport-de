@@ -113,6 +113,27 @@ layout: default
     outline-offset: 4px;
 }
 
+.skytech-video-stack {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 18%;
+    isolation: isolate;
+}
+.skytech-video-stack .skytech-hero-video {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.skytech-video-stack .skytech-video-back {
+    position: absolute;
+    z-index: 1;
+    left: 3%;
+    top: 34%;
+    width: 94%;
+    transform: perspective(1100px) rotateY(-17deg) rotate(5deg);
+    border-color: #254d77;
+}
 .skytech-hero-video {
     overflow: hidden;
     aspect-ratio: 16 / 9;
@@ -146,6 +167,15 @@ layout: default
         width: 100%;
     }
 
+    .skytech-video-stack {
+        flex: auto;
+        width: 100%;
+        padding-bottom: 20%;
+    }
+    .skytech-video-stack .skytech-video-back {
+        transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
+        top: 33%;
+    }
     .skytech-hero-video {
         transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
         max-width: 100%;
@@ -228,14 +258,25 @@ layout: default
             </div>
         </div>
 
-        <div class="skytech-hero-video">
-            <iframe
-                src="https://www.youtube.com/embed/JSZYOQPFKfo"
-                title="SkyTechSport Ski- und Snowboard-Simulator"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
+        <div class="skytech-video-stack" aria-label="Ski- und Snowboardvideos">
+            <div class="skytech-hero-video skytech-video-back">
+                <iframe
+                    src="https://www.youtube.com/embed/RvSN7FiG5Ds"
+                    title="SkyTechSport Snowboard-Training am Simulator"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="skytech-hero-video">
+                <iframe
+                    src="https://www.youtube.com/embed/JSZYOQPFKfo"
+                    title="SkyTechSport Ski-Simulator"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
 </section>
