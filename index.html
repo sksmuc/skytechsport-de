@@ -18,6 +18,21 @@ layout: default
     background-size: 120% auto;
 }
 
+/* Auf Desktop die untere Simulator-Mechanik mit einem weichen Verlauf abdecken. */
+@media (min-width: 801px) {
+    .skytech-hero::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 19%;
+        z-index: -1;
+        pointer-events: none;
+        background: linear-gradient(to bottom, rgba(5, 18, 32, 0), rgba(5, 18, 32, .96));
+    }
+}
+
 .skytech-hero::before {
     content: "";
     position: absolute;
