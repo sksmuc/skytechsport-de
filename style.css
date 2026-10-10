@@ -797,3 +797,55 @@ z-index: 1000;
     left: 65px;
   }
 }
+
+
+/* Kompakter Smartphone-Header: Logo oben, Sprachen und Menü darunter */
+@media (max-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 8px;
+    min-height: 0;
+    padding: 8px 12px;
+  }
+  .navbar .nav-branding {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar .nav-branding img {
+    width: 190px;
+    height: auto;
+  }
+  .navbar .language-flags {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+  .navbar .language-flags img {
+    width: 24px;
+    height: 17px;
+  }
+  .navbar .hamburger {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+    padding: 5px;
+  }
+  .navbar .nav-menu {
+    top: 0;
+    margin-top: 0;
+    padding-top: 112px;
+    height: 100dvh;
+    overflow-y: auto;
+    z-index: -1;
+  }
+  .navbar .nav-menu.active { z-index: 1; }
+}
