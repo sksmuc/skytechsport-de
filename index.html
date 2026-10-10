@@ -146,6 +146,23 @@ layout: default
         0 0 25px rgba(100, 190, 255, 0.25);
 }
 
+.skytech-video-back.is-playing { z-index: 4; }
+.skytech-snowboard-play {
+    position: absolute;
+    z-index: 5;
+    left: 12px;
+    bottom: 12px;
+    width: 52px;
+    height: 42px;
+    border: 0;
+    border-radius: 9px;
+    background: #f20b32;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,.4);
+}
+.skytech-snowboard-play:focus-visible { outline: 3px solid white; outline-offset: 3px; }
 .skytech-hero-video iframe {
     display: block;
     width: 100%;
@@ -170,12 +187,12 @@ layout: default
     .skytech-video-stack {
         flex: auto;
         width: 100%;
-        padding-bottom: 26%;
+        padding-bottom: 30%;
     }
     .skytech-video-stack .skytech-video-back {
         transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
-        left: -3%;
-        top: 31%;
+        left: -6%;
+        top: 45%;
     }
     .skytech-hero-video {
         transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
@@ -261,7 +278,7 @@ layout: default
         </div>
 
         <div class="skytech-video-stack" aria-label="Ski- und Snowboardvideos">
-            <div class="skytech-hero-video skytech-video-back">
+            <div class="skytech-hero-video skytech-video-back" id="skytech-snowboard-card">
                 <iframe
                     src="https://www.youtube.com/embed/RvSN7FiG5Ds"
                     title="SkyTechSport Snowboard-Training am Simulator"
@@ -269,6 +286,7 @@ layout: default
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+                <button class="skytech-snowboard-play" type="button" aria-label="Snowboard-Video abspielen" onclick="var card=this.parentElement;card.classList.add('is-playing');var video=card.querySelector('iframe');video.src='https://www.youtube.com/embed/RvSN7FiG5Ds?autoplay=1';this.remove();">▶</button>
             </div>
             <div class="skytech-hero-video">
                 <iframe
