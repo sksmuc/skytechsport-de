@@ -162,6 +162,43 @@ layout: default
 }
 
 
+.skytech-front-video { position: relative; }
+.skytech-front-poster {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: #081a2a url('/images/panorama-light.jpg.webp') center center / cover no-repeat;
+}
+.skytech-front-poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.12);
+    pointer-events: none;
+}
+.skytech-front-poster span {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 54px;
+    border-radius: 14px;
+    background: #f20b32;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.35);
+}
+.skytech-front-poster:focus-visible { outline: 3px solid white; outline-offset: -5px; }
+
 .skytech-video-back.is-playing { z-index: 4; }
 .skytech-snowboard-play {
     position: absolute;
@@ -305,14 +342,15 @@ layout: default
                 </iframe>
                 <button class="skytech-snowboard-play" type="button" aria-label="Snowboard-Video abspielen" onclick="var card=this.parentElement;card.classList.add('is-playing');var video=card.querySelector('iframe');video.src='https://www.youtube.com/embed/RvSN7FiG5Ds?autoplay=1';this.remove();">▶</button>
             </div>
-            <div class="skytech-hero-video">
+            <div class="skytech-hero-video skytech-front-video">
                 <iframe
-                    src="https://www.youtube.com/embed/JSZYOQPFKfo"
+                    src="about:blank"
                     title="SkyTechSport Ski-Simulator"
                     loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+                <button class="skytech-front-poster" type="button" aria-label="Skivideo abspielen" onclick="var frame=this.parentElement.querySelector('iframe');frame.src='https://www.youtube.com/embed/JSZYOQPFKfo?autoplay=1';this.remove();"><span aria-hidden="true">▶</span></button>
             </div>
         </div>
     </div>
