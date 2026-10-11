@@ -1,0 +1,47 @@
+---
+layout: ru
+lang: ru
+translation_key: kontaktformular.html
+---
+
+
+
+<section class="padded bg-dark">
+    <div class="padded-10 bg-light">
+
+        <h2> Поделитесь своим интересом.</h2>
+        <p class="padded">Отправьте нам электронное письмо по адресу <b>club@skytechsport.de</b> или воспользуйтесь нашей контактной формой.</p>
+        <h3> Мы скоро свяжемся с вами! </h3>
+        <br>
+
+
+ <!-------------------------------- Form -------------------------------------------->
+
+ <form action="https://formspree.io/f/xjvlrdnb"
+ method="POST">
+
+   <label for="_name">Ваше имя: </label>
+   <input  type="text"
+           name="_name"
+           id="_name"
+           placeholder="Имя и фамилия"/>
+
+  <label for="_replyto">Ваш адрес электронной почты: </label>
+ <input  type="email"
+          name="_replyto"
+          placeholder="Адрес электронной почты"/>
+
+   <label for="message">Ваше сообщение:</label>
+ <textarea name="message"
+           id="message"
+           placeholder="Чем мы можем вам помочь?"></textarea>
+   <!-------------------------------- End -------------------------------------------->
+
+ <p>Я согласен на сбор, обработку и использование моих персональных данных (информацию, дату и время контакта, URL-адрес реферера, тип браузера, IP-адрес) с целью установления контакта и определения эффективности рекламы. Для получения дополнительной информации см. <a href="/ru.datenschutz.html">Политика конфиденциальности.</a></p>
+
+ <button type="submit" class="pointer"> Согласитесь и отправьте! </button>
+
+ </form>
+
+    </div>
+</section>

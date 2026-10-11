@@ -1,0 +1,365 @@
+---
+layout: tr
+lang: tr
+translation_key: index.html
+---
+
+<style>
+.skytech-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    min-height: 580px;
+    padding: 5rem 6%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: url('/images/alpenpanorama-hero.png');
+    background-position: center;
+}
+
+/* Auf Desktop die untere Simulator-Mechanik mit einem weichen Verlauf abdecken. */
+@media (min-width: 801px) {
+    .skytech-hero::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 19%;
+        z-index: -1;
+        pointer-events: none;
+        background: linear-gradient(to bottom, rgba(5, 18, 32, 0), rgba(5, 18, 32, .96));
+    }
+}
+
+.skytech-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(9, 48, 171, 0.48) 0%, rgba(9, 48, 171, 0.20) 34%, rgba(4, 17, 37, 0.10) 75%),
+                linear-gradient(90deg, rgba(5, 18, 32, 0.88), rgba(5, 18, 32, 0.46) 55%, rgba(5, 18, 32, 0.17));
+}
+
+.skytech-hero-copy,
+.skytech-hero-video {
+    flex: 1;
+    min-width: 0;
+}
+
+.skytech-hero-copy {
+    color: #fff;
+}
+
+.skytech-hero-copy .skytech-brand {
+    margin: 0 0 1rem;
+    color: #fff;
+    font-size: clamp(3rem, 5.2vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+.skytech-brand-accent { color: #f20b32; }
+
+.skytech-hero-copy h1 {
+    margin: 0 0 .65rem;
+    color: #fff;
+    font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+    line-height: 1.12;
+}
+
+.skytech-hero-copy .skytech-studio-line {
+    color: #fff;
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 1rem;
+}
+.skytech-hero-copy .skytech-studio-line::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    margin-top: .8rem;
+    background: #f20b32;
+}
+.skytech-hero-copy p {
+    color: #fff;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.skytech-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skytech-hero-actions a {
+    display: inline-block;
+    padding: 0.9rem 1.3rem;
+    border: 2px solid #111;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skytech-hero-actions a:first-child {
+    background: #cf171e;
+    border-color: #cf171e;
+    color: #fff;
+}
+
+.skytech-hero-actions a:nth-child(2) {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+.skytech-hero-actions a:hover {
+    filter: brightness(1.15);
+}
+
+.skytech-hero-actions a:focus-visible {
+    outline: 3px solid #7ed5ff;
+    outline-offset: 4px;
+}
+
+.skytech-video-stack {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 18%;
+    isolation: isolate;
+}
+.skytech-video-stack .skytech-hero-video {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.skytech-video-stack .skytech-video-back {
+    position: absolute;
+    z-index: 1;
+    left: calc(3% - 114px);
+    top: 37%;
+    width: 94%;
+    transform: perspective(1100px) rotateY(-17deg) rotate(5deg);
+    border-color: #254d77;
+}
+.skytech-hero-video {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border: 5px solid #14283c;
+    border-radius: 12px;
+    background: #000;
+    transform: perspective(1100px) rotateY(-17deg) rotate(5deg);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        0 0 25px rgba(100, 190, 255, 0.25);
+}
+
+
+.skytech-front-video { position: relative; }
+.skytech-front-poster {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: #081a2a url('/images/panorama-light.jpg.webp') center center / cover no-repeat;
+}
+.skytech-front-poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.12);
+    pointer-events: none;
+}
+.skytech-front-poster span {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 54px;
+    border-radius: 14px;
+    background: #f20b32;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.35);
+}
+.skytech-front-poster:focus-visible { outline: 3px solid white; outline-offset: -5px; }
+
+.skytech-video-back.is-playing { z-index: 4; }
+.skytech-snowboard-play {
+    position: absolute;
+    z-index: 5;
+    left: 12px;
+    bottom: 12px;
+    width: 52px;
+    height: 42px;
+    border: 0;
+    border-radius: 9px;
+    background: #f20b32;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,.4);
+}
+.skytech-snowboard-play:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.skytech-hero-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 800px) {
+    .skytech-hero {
+        flex-direction: column;
+        gap: 2.5rem;
+        min-height: auto;
+        padding: 3rem 7%;
+    }
+
+    .skytech-hero-copy,
+    .skytech-hero-video {
+        flex: auto;
+        width: 100%;
+    }
+
+    .skytech-video-stack {
+        flex: auto;
+        width: 100%;
+        padding-bottom: 30%;
+        margin-top: -1rem;
+    }
+    .skytech-video-stack .skytech-video-back {
+        transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
+        left: -6%;
+        top: 45%;
+    }
+    .skytech-hero-video {
+        transform: perspective(1100px) rotateY(-7deg) rotate(2deg);
+        max-width: 100%;
+    }
+    .skytech-hero {
+        background-size: cover;
+        background-position: 38% center;
+    }
+    .skytech-hero-copy .skytech-brand {
+        font-size: clamp(2rem, 7vw, 3.5rem);
+        overflow-wrap: anywhere;
+    }
+    .skytech-hero-actions {
+        gap: .75rem;
+    }
+    .skytech-hero-actions a {
+        padding: .8rem 1rem;
+    }
+}
+
+/* Vorteile direkt unter dem Titelbild */
+.skytech-benefits {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 2.4rem 4%;
+    background: #0d1016;
+    color: #fff;
+}
+.skytech-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    min-width: 0;
+}
+.skytech-benefit i {
+    color: #f20b32;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    margin-top: .2rem;
+}
+.skytech-benefit h3 {
+    color: #fff;
+    font-size: 1.22rem;
+    line-height: 1.25;
+    margin: 0 0 .4rem;
+}
+.skytech-benefit p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .skytech-benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+    .skytech-benefits { grid-template-columns: 1fr; padding: 2rem 7%; }
+}
+</style>
+
+<section class="grid">
+    <div class="col-12 bg bg-featured skytech-hero">
+        <div class="skytech-hero-copy">
+            <p class="skytech-brand">SKYTECH<span class="skytech-brand-accent">SPORT</span></p>
+
+            <h1>Bir profesyonel gibi antrenman yap.<br>Yıl boyunca.</h1>
+
+            <p class="skytech-studio-line">Münih'teki stüdyoda veya<br>kendi simülatörünüzde.</p>
+
+            <p>
+                Kayak ve snowboard<br>
+                her yerde – gerçekçi,<br>
+                güvenli ve verimli.
+            </p>
+
+            <div class="skytech-hero-actions">
+                <a href="/tr.unserstudio.html">Simülatörü keşfet</a>
+                <a href="/tr.kontaktformular.html">Satın al veya kirala</a>
+            </div>
+        </div>
+
+        <div class="skytech-video-stack" aria-label="Kayak ve snowboard videoları">
+            <div class="skytech-hero-video skytech-video-back" id="skytech-snowboard-card">
+                <iframe
+                    src="https://www.youtube.com/embed/RvSN7FiG5Ds"
+                    title="Simülatörde SkyTechSport snowboard eğitimi"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <button class="skytech-snowboard-play" type="button" aria-label="Snowboard videosunu oynat" onclick="var card=this.parentElement;card.classList.add('is-playing');var video=card.querySelector('iframe');video.src='https://www.youtube.com/embed/RvSN7FiG5Ds?autoplay=1';this.remove();">▶</button>
+            </div>
+            <div class="skytech-hero-video skytech-front-video">
+                <iframe
+                    src="about:blank"
+                    title="SkyTechSport kayak simülatörü"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <button class="skytech-front-poster" type="button" aria-label="Kayak videosunu oynat" onclick="var frame=this.parentElement.querySelector('iframe');frame.src='https://www.youtube.com/embed/JSZYOQPFKfo?autoplay=1';this.remove();"><span aria-hidden="true">▶</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skytech-benefits" aria-label="SkyTechSport Simülatörünün Avantajları">
+    <div class="skytech-benefit"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><div><h3>Başlangıçtan itibaren<br>profesyonele</h3><p>Hedeflenen eğitim sayesinde hızlı ilerleme</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-users" aria-hidden="true"></i><div><h3>Eğitmenler için<br>ve sporcular</h3><p>Teknolojiyi analiz edin ve hedefe yönelik bir şekilde iyileştirin</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><div><h3>Tüm yıl boyunca<br>eğitim</h3><p>Hava durumu ve kayak mevsimi ne olursa olsun</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-mountain" aria-hidden="true"></i><div><h3>Gerçekçi<br>sürüş deneyimi</h3><p>Gerçek dinamiklere sahip son teknoloji simülasyon</p></div></div>
+    <div class="skytech-benefit"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><h3>Güvenli ve<br>verimli</h3><p>Risksiz, maksimum eğitim etkisi ile</p></div></div>
+</section>
