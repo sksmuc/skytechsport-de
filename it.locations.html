@@ -1,0 +1,50 @@
+---
+layout: it
+lang: it
+translation_key: locations.html
+title: Standorte
+locations:
+-   city: München <br> (Bayern)
+    store: SkyTechSport Club (Headoffice)
+    url: https://skytechsport.de
+    website: skytechsport.de
+-   city: Schönenberg-Kübelberg <br> (Rheinland-Pfalz)
+    store: Alpenski- und Snowboardgeräte Grelich
+    url: https://skytechsport.grelich.com
+    website: skytechsport.grelich.com
+-   city: Offenburg <br> (Baden-Württemberg)
+    store: Sport Kuhn
+    url: https://sport-kuhn.de
+    website: sport-kuhn.de
+-   city: Friedberg <br> (Bayern)
+    store: Sport Store Förg
+    url: https://foerg.de
+    website: foerg.de
+---
+
+
+
+<section class="grid padded bg-dark light-text">
+    <div class="col-12 center">
+        <p> Ecco un elenco di diversi studi in tutto il mondo in cui è possibile guidare i nostri esclusivi simulatori di sci e snowboard.</p>
+    </div>
+</section>
+
+
+<section class="grid padded">
+    {% for item in page.locations %}
+    <div class="col-3_md-4_sm-6 center padded">
+
+        <h1>Intestazione 1</h1>
+        <h2> Intestazione 2</h2>
+        <h3> Intestazione 3</h3>
+        <h4> Intestazione 4</h4>
+        <h5 class="bg-dark"> Intestazione 5</h5>
+        <h6> Intestazione 6</h6>
+        <h2> {{item.city}}
+        </h2><br>
+        <p>{{item.store}}<br><br>
+            <a href="{{item.url}}" class="light-link">{{item.website}}</a>
+    </div>
+    {% endfor %}
+    </section>

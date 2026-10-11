@@ -1,0 +1,47 @@
+---
+layout: it
+lang: it
+translation_key: kontaktformular.html
+---
+
+
+
+<section class="padded bg-dark">
+    <div class="padded-10 bg-light">
+
+        <h2> Condividi il tuo interesse.</h2>
+        <p class="padded">Inviaci una email a <b>club@skytechsport.de</b> oppure utilizza il nostro modulo di contatto.</p>
+        <h3> Ti contatteremo a breve! </h3>
+        <br>
+
+
+ <!-------------------------------- Form -------------------------------------------->
+
+ <form action="https://formspree.io/f/xjvlrdnb"
+ method="POST">
+
+   <label for="_name">Il tuo nome: </label>
+   <input  type="text"
+           name="_name"
+           id="_name"
+           placeholder="Nome e cognome"/>
+
+  <label for="_replyto">Il tuo indirizzo email: </label>
+ <input  type="email"
+          name="_replyto"
+          placeholder="Indirizzo di posta elettronica"/>
+
+   <label for="message">Il tuo messaggio:</label>
+ <textarea name="message"
+           id="message"
+           placeholder="Come possiamo aiutarti?"></textarea>
+   <!-------------------------------- End -------------------------------------------->
+
+ <p>Acconsento alla raccolta, al trattamento e all'utilizzo dei miei dati personali (informazioni, data e ora del contatto, URL di riferimento, tipo di browser, indirizzo IP) allo scopo di stabilire un contatto e determinare l'efficacia della pubblicità. Per ulteriori informazioni vedere <a href="/it.datenschutz.html">Informativa sulla privacy.</a></p>
+
+ <button type="submit" class="pointer"> Accetta e invia! </button>
+
+ </form>
+
+    </div>
+</section>

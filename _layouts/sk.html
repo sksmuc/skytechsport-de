@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <title> SkyTechSport Club Mníchov </title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!----------------------- Google Fonts ---------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!-----------------------
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+-------------->
+
+<!----------------------- FontAwesome ---------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!----------------------- Gridlex ---------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+<!----------------------- Custom Stylesheet ---------------------------->
+    <link rel="stylesheet" href="/style.css">
+
+    </head>
+
+<!---------------------------------------------------------->
+<!---------------------------------------------------------->
+
+<body>
+
+
+
+<header>
+    <nav class="navbar">
+      <a href="/sk.index.html" class="nav-branding"> <img src="/images/logo-skytech.png"> </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/sk.index.html" class="nav-link">Úvod</a>
+        </li>
+        <li class="nav-item">
+          <a href="/sk.kaufen.html" class="nav-link">Kúpiť</a>
+        </li>
+<!---------
+        <li class="nav-item">
+          <a href="/sk.mieten.html" class="nav-link">Mieten</a>
+        </li>
+        --->
+        <li class="nav-item">
+            <a href="/sk.training.html" class="nav-link">školenia</a>
+          </li>
+        <li class="nav-item">
+          <a href="/sk.unserstudio.html" class="nav-link">Naše štúdio</a>
+        </li>
+        <li class="nav-item">
+            <a href="/sk.kontaktformular.html" class="nav-link">kontakt</a>
+          </li>
+
+         <li class="nav-item">
+            <a href="/sk.agbs.html" class="nav-link">Podmienky</a>
+          </li>
+
+      </ul>
+
+<div class="language-flags" aria-label="Vyberte jazyk">
+  <a href="/{{ page.translation_key }}" title="Deutsch" aria-label="Deutsch"><img src="https://flagcdn.com/w40/de.png" alt="Deutsch" width="32" height="22" loading="lazy"></a>
+  <a href="/en.{{ page.translation_key }}" title="English" aria-label="English"><img src="https://flagcdn.com/w40/gb.png" alt="English" width="32" height="22" loading="lazy"></a>
+  <a href="/it.{{ page.translation_key }}" title="Italiano" aria-label="Italiano"><img src="https://flagcdn.com/w40/it.png" alt="Italiano" width="32" height="22" loading="lazy"></a>
+  <a href="/fr.{{ page.translation_key }}" title="Français" aria-label="Français"><img src="https://flagcdn.com/w40/fr.png" alt="Français" width="32" height="22" loading="lazy"></a>
+  <a href="/hu.{{ page.translation_key }}" title="Magyar" aria-label="Magyar"><img src="https://flagcdn.com/w40/hu.png" alt="Magyar" width="32" height="22" loading="lazy"></a>
+  <a href="/sr.{{ page.translation_key }}" title="Srpski" aria-label="Srpski"><img src="https://flagcdn.com/w40/rs.png" alt="Srpski" width="32" height="22" loading="lazy"></a>
+  <a href="/bg.{{ page.translation_key }}" title="Български" aria-label="Български"><img src="https://flagcdn.com/w40/bg.png" alt="Български" width="32" height="22" loading="lazy"></a>
+  <a href="/sk.{{ page.translation_key }}" title="Slovenčina" aria-label="Slovenčina"><img src="https://flagcdn.com/w40/sk.png" alt="Slovenčina" width="32" height="22" loading="lazy"></a>
+</div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
+  <!----------------------------------------------------------->
+  <!----------------------------------------------------------->
+  <!----------------------------------------------------------->
+<!--------------------- OLD HEADER WITHOUT HAMBURGER MENU NAV --------------->
+<!----------------------------------------- Header -------------------------------------
+    <header class="grid-spaceBetween padded-2">
+        <div class="col-3-middle_md-12-middle center-md">
+            <img src="/images/logo-skytech.png">
+        </div>
+
+        <nav class="col-6_md-12-middle center-md right padded-r">
+            <a href="/sk.index.html">Home</a>
+            <a href="/sk.kaufen.html">Kaufen</a>
+            <a href="/sk.mieten.html">Mieten</a>
+            <a href="/sk.training.html">Training</a>
+            <a href="/sk.unserstudio.html">Unser Studio</a>
+            <a href="/sk.kontaktformular.html">Kontakt</a>
+        </nav>
+    </header>
+
+    -------------->
+<!--------------------------------------------------->
+
+
+
+
+{{ content }}
+
+<!----------------------------------------------------------------------------------------------------------->
+<!----------------------------------------- Footer ----------------------------------------------------------->
+<footer class="grid padded-footer">
+
+    <div class="col-3_sm-12">
+        <img src="/images/logo-skytech.png">
+        <p>Riesenfeldstraße 16 | 80809 Mníchov <br>
+        Zastávka: Petuelring (U3, autobus, električka)</p>
+    </div>
+<!----------------------------------------------------------->
+<!--------------------------- Empty Filler------------------->
+    <div class="col-1 hide-sm">
+        <!--- empty filler---->
+    </div>
+<!----------------------------------------------------------->
+<!----------------------------------- Home ------------------>
+    <div class="col-3_sm-4_xs-12">
+        <h4>Úvod</h4>
+        <nav>
+            <a href="/sk.unserstudio.html">Naše štúdio</a>
+            <a href="/sk.training.html">školenia</a>
+            <!---------
+            <a href="/sk.ueberuns.html">(Über Uns)</a>
+            ---->
+        </nav>
+    </div>
+    <!----------------------------------------------------->
+<!----------------------------------- Simulatoren ------------->
+    <div class="col-3_sm-4_xs-12">
+        <h4>Simulátory</h4>
+        <nav>
+            <!---------
+            <a href="/sk.mieten.html">(Mieten)</a>
+            ---->
+            <a href="/sk.kaufen.html">Kúpiť</a>
+            <!---------
+            <a href="/sk.partnerwerden.html">(Partner werden)</a>
+            ---->
+        </nav>
+    </div>
+    <!----------------------------------------------------->
+<!------------------------------- Kontakt --------------------->
+    <div class="col-2_sm-4_xs-12">
+        <h4>kontakt</h4>
+        <nav>
+            <a href="/sk.kontaktformular.html">Formulár</a>
+            <a href="/sk.datenschutz.html">Ochrana údajov</a>
+            <a href="/sk.impressum.html">odtlačok</a>
+        </nav>
+    </div>
+</footer>
+<div class="center copyright"> <p>Copyright | ©2022 | <a href="mailto:info@skytechsport.de" target="_blank">SkyTechSport</a> </p></div>
+<!----------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+
+<!--------------------- Add jQuery -------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--------------------- Add Slick Carousel -------------------->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-------------- custom javascript files -------------->
+<script src="/scripts.js"></script>
+
+</body>
+
+</html>

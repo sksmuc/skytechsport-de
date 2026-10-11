@@ -1,0 +1,50 @@
+---
+layout: sk
+lang: sk
+translation_key: locations.html
+title: Standorte
+locations:
+-   city: München <br> (Bayern)
+    store: SkyTechSport Club (Headoffice)
+    url: https://skytechsport.de
+    website: skytechsport.de
+-   city: Schönenberg-Kübelberg <br> (Rheinland-Pfalz)
+    store: Alpenski- und Snowboardgeräte Grelich
+    url: https://skytechsport.grelich.com
+    website: skytechsport.grelich.com
+-   city: Offenburg <br> (Baden-Württemberg)
+    store: Sport Kuhn
+    url: https://sport-kuhn.de
+    website: sport-kuhn.de
+-   city: Friedberg <br> (Bayern)
+    store: Sport Store Förg
+    url: https://foerg.de
+    website: foerg.de
+---
+
+
+
+<section class="grid padded bg-dark light-text">
+    <div class="col-12 center">
+        <p> Tu je zoznam niekoľkých štúdií po celom svete, kde si môžete zajazdiť na našich exkluzívnych lyžiarskych a snowboardových simulátoroch.</p>
+    </div>
+</section>
+
+
+<section class="grid padded">
+    {% for item in page.locations %}
+    <div class="col-3_md-4_sm-6 center padded">
+
+        <h1>Hlavička 1</h1>
+        <h2> Hlavičky 2</h2>
+        <h3> Hlavičky 3</h3>
+        <h4> Hlavičky 4</h4>
+        <h5 class="bg-dark"> Hlavičky 5</h5>
+        <h6> Hlavičky 6</h6>
+        <h2> {{item.city}}
+        </h2><br>
+        <p>{{item.store}}<br><br>
+            <a href="{{item.url}}" class="light-link">{{item.website}}</a>
+    </div>
+    {% endfor %}
+    </section>
